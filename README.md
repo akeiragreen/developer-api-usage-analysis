@@ -1,6 +1,6 @@
 # 📊 Developer API Usage SQL Analysis
 
-This project analyzes suspicious and high-volume developer API usage using SQL. It transforms raw log data into actionable insights that could support **engineering, product, and security teams** — especially at companies like **Fingerprint** that focus on fraud prevention, SDK adoption, and developer-first infrastructure.
+This project analyzes suspicious and high-volume developer API usage using SQL. It transforms raw log data into actionable insights that could support **engineering, product, and security teams** , especially at companies like **Fingerprint** that focus on fraud prevention, SDK adoption, and developer-first infrastructure.
 
 ---
 
