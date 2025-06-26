@@ -6,9 +6,9 @@ This project analyzes suspicious and high-volume developer API usage using SQL. 
 
 ## 🚀 Why This Project Matters
 
-APIs are the backbone of modern software — especially for tools used by developers. But behind every endpoint hit lies behavior: user sessions, bot traffic, usage surges, or potential abuse.
+APIs are the backbone of modern software, especially for tools used by developers. But behind every endpoint hit lies behavior: user sessions, bot traffic, usage surges, or potential abuse.
 
-This project explores those behavioral patterns using SQL — uncovering:
+This project explores those behavioral patterns using SQL, uncovering:
 
 - Where API usage is coming from  
 - When it's most active  
