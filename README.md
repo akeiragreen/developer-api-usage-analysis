@@ -9,12 +9,42 @@ This project analyzes suspicious and high-volume developer API usage using SQL. 
 APIs are the backbone of modern software — especially for tools used by developers. But behind every endpoint hit lies behavior: user sessions, bot traffic, usage surges, or potential abuse.
 
 This project explores those behavioral patterns using SQL — uncovering:
-- Where API usage is coming from
-- When it's most active
-- How users interact with the SDK/API
+
+- Where API usage is coming from  
+- When it's most active  
+- How users interact with the SDK/API  
 - Whether some users exhibit suspicious behavior (e.g., scraping)
 
 By running these queries, we simulate the kind of internal telemetry monitoring and product analytics that helps dev-centric companies grow safely and intelligently.
+
+---
+
+## 🧼 Excel Data Cleaning (Pre-SQL Prep)
+
+Before importing the dataset into MySQL, the raw Kaggle `.csv` needed light transformation in Excel to make it usable and SQL-ready.
+
+### ✅ Cleaning Steps:
+
+1. **Timestamp Conversion:**  
+   The original timestamps were in ISO 8601 format (e.g. `2024-04-25T23:10:00Z`). These were:
+   - Converted to standard Excel-readable datetime using:
+     ```excel
+     =SUBSTITUTE(SUBSTITUTE(A2, "T", " "), "Z", "")
+     ```
+   - Split into separate `Date` and `Time` columns using:
+     ```excel
+     =INT(A2)         → for the Date  
+     =MOD(A2, 1)      → for the Time
+     ```
+   - Reformatted to `yyyy-mm-dd` and `hh:mm:ss`
+
+2. **New Columns Created:**
+   - `creation_date`, `creation_time`  
+   - `end_date`, `end_time`  
+   - `event_date`, `event_time`
+
+3. **Preserved Original Data:**
+   - Both the original and cleaned Excel files are included in this repo under `/data/` for transparency and reuse.
 
 ---
 
