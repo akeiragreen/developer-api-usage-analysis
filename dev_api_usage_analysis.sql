@@ -73,7 +73,8 @@ HAVING avg_out > 5 * avg_in;
 
 -- SQL Logic Summary: Identifies IPs with significantly higher outbound data compared to inbound.
 --     Flags traffic patterns consistent with scraping or automated access.
--- Insights for Stakeholders: IPs like '65.49.1.96' (avg_out: 8980, avg_in: 1674) show suspicious data behavior — engineering could consider rate-limiting or blacklisting.
+-- Insights for Stakeholders: IPs like '65.49.1.96' (avg_out: 8980, avg_in: 1674) show suspicious data behavior — 
+--     engineering could consider rate-limiting or blacklisting.
 
 
 -- ----------------------------------------------------------------------------------------------------------------------------------
