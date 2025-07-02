@@ -108,6 +108,7 @@ This type of analysis aligns directly with companies like **Fingerprint** who pr
 - SQL (MySQL 8+)
 - Raw CSV telemetry logs from Kaggle (cleaned & imported)
 - Timestamp normalization and time-based analysis
+- Tableau (Interactive data visualization)
 
 ---
 
